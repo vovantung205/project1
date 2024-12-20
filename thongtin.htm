@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Central zoo</title>
+        <link rel="stylesheet" href="">
+        <!-- Cài đặt bs4-css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- Cai dat FA4.7 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Cai dat icon bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Cài đặt bs4-js (Nếu không, Dropdown Menu Link sẽ không hoạt động đúng, chỉ Link mà ko dropdown)-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <style>
+            header{
+                background-color:darkolivegreen;
+                height: 70px;
+                width: 100%;
+                position: fixed;
+                z-index: 1000;
+            }
+            .logo{
+                float: left;
+
+            }
+            .link{
+                display: inline-block;
+                float:right;
+                margin-right:50px ;
+                margin-top: 20px;
+            }
+            .datve{
+                display: inline-block;
+                float:right;
+                margin-right:5px ;
+                margin-top: 20px;
+            }
+
+            .dropdown {
+                float: right;
+                height: 100px;
+                margin-right: 50px;
+                margin-top: 20px;
+
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            /* Định nghĩa kiểu cho nội dung dropdown */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+
+            /* Hiển thị nội dung dropdown khi di chuột vào */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            footer{
+                height: 200px;
+                background-color: darkolivegreen;
+            }
+            .mxh{
+                margin-left: 10px;
+                margin-top: 50%;
+            }
+        </style>
+        
+    </head>
+    <body style="background-color: antiquewhite;">
+        <header>
+            <nav>
+                <div class="logo">
+                <h1 style="color: white;margin-left: 20px;float: left;margin-top: 10px;">Central Zoo</h1>    
+                </div>
+
+                <div style="float: left;margin-top: 20px;margin-left: 50px;">
+                    <a href="trangchu.htm"><h5 style="color: white;"><i class="bi bi-house" style="margin-right: 5px;"></i>Trang Chủ
+                    </h5></a>
+                </div>
+
+                <div>
+                    <a href="diachi.htm" class="link"><h5 style="color: white;"><i class="bi bi-geo-alt"></i>Map</h5></a>
+                </div>
+
+                <div>
+                    <a href="datve.htm" class="link"><h5 style="color: white;"><i class="bi bi-ticket-fill" style="margin-right: 5px;"></i>Đặt Vé</h5></a>
+                </div>
+
+                <div class="dropdown">
+                    <span><a href="dongvat.htm">
+                            <h5 style="color: white">Động Vật</h5>
+                        </a></span>
+                    <div class="dropdown-content">
+                        <p> <a href="thuhoangda.htm">Thú Hoang Dã</a></p>
+                        <p><a href="ca">Cá</a></p>
+                        <p><a href="chim">Chim</a></p>
+                    </div>
+                </div>
+            </nav>
+            
+            
+        </header>
+        
+        <main style="height: auto;">
+            <div>
+                <img src="https://assets2.htv.com.vn/Images/1/News/102609/newztg_2409_us-wi-flamingos---ha-thao.png" alt="" style="width: 100%;">
+            </div> 
+            <br>
+            <br>
+            <div style="width: 60%;margin-left: auto;margin-right: auto;">
+                <h1 style="color: darkolivegreen;text-align: center;">GIỚI THIỆU</h1>
+                <h6 style="color: darkolivegreen;text-align: center;">
+                    Vườn thú Central là một trong những vườn thú lớn nhất thị trấn.
+                    Diện tích đất của vườn thú là 33.Vườn thú CENTRAL được thành lập
+                    vào năm 1980 với diện tích 10 mẫu đất nhưng gần đây nó
+                    đã được sửa đổi và diện tích đất cũng được bổ sung vào năm 2000.
+                    Không gian cư trú hợp lýđối với tất cả các loại động vật đã được
+                    tạo ra và duy trì an ninh con người ở mức cao.Việc cung cấp thức
+                    ăn phù hợp cho tất cả các loài động vật được duy trì và kiểm tra thường xuyên.</h6>
+            </div>
+        </main>
+            <br>
+            
+    </body>
+</html>

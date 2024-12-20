@@ -1,0 +1,84 @@
+
+header{
+    background-color:darkolivegreen;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.logo{
+    float: left;
+
+}
+.link{
+    display: inline-block;
+    float:right;
+    margin-right:50px ;
+    margin-top: 20px;
+}
+.datve{
+    display: inline-block;
+    float:right;
+    margin-right:5px ;
+    margin-top: 20px;
+}
+
+.dropdown {
+    float: right;
+    height: 100px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Định nghĩa kiểu cho nội dung dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* Hiển thị nội dung dropdown khi di chuột vào */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer{
+    height: 200px;
+    background-color: darkolivegreen;
+}
+.mxh{
+    font-size: 30px;
+    margin-right: 50px;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .part1, .part2, .part3 {
+    flex: 1;
+  }
+.part1{
+    border-right: 1px solid white;
+}
+.part2{
+    border-right: 1px solid white;
+}
+.text {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            margin-left: 20px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        nav h5 {
+            color: white;
+            margin-right: 5px;
+        }
+
+        .wildlife-item {
+            display: flex;
+            margin: 20px;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .wildlife-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .wildlife-item-content {
+            padding: 20px;
+        }
+
+        .wildlife-item h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .mxh {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <h1>Central Zoo</h1>
+        </div>
+
+        <div style="float: left; margin-top: 20px; margin-left: 50px;">
+            <a href="trangchu.htm"><h5><i class="bi bi-house" style="margin-right: 5px;"></i>Trang Chủ</h5></a>
+        </div>
+
+        <div>
+            <a href="diachi.htm" class="link"><h5><i class="bi bi-geo-alt"></i>Map</h5></a>
+        </div>
+
+        <div>
+            <a href="datve.htm" class="link"><h5><i class="bi bi-ticket-fill" style="margin-right: 5px;"></i>Đặt Vé</h5></a>
+        </div>
+
+        <div class="dropdown">
+            <span><a href="dongvat.htm"><h5>Động Vật</h5></a></span>
+            <div class="dropdown-content">
+                <p><a href="thuhoangda.htm">Thú Hoang Dã</a></p>
+                <p><a href="ca">Cá</a></p>
+                <p><a href="chim">Chim</a></p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="wildlife-container">
+        <div class="wildlife-item">
+            <img src="https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-voi-baby-cute.jpg" alt="Animal 1">
+            <div class="wildlife-item-content">
+                <h2>Voi</h2>
+                <p>Voi là động vật sống trên cạn lớn nhất. Voi đồng cỏ châu Phi là<br> loài lớn nhất trong số các loài voi; cá thể đực có thể cao từ<br> 304–336 cm tới vai, với khối lượng cơ thể từ 5,2–6,9 tấn; cá thể<br> cái có thể cao từ 247–273 cm tới vai, với khối lượng cơ thể từ<br> 2,6–3,5 tấn.</p>
+            </div>
+        </div>
+        <div class="wildlife-item">
+            <img src="https://img4.thuthuatphanmem.vn/uploads/2019/12/22/chu-su-tu-duc-bom-den-dang-ngap_015735064.jpg" alt="Animal 2">
+            <div class="wildlife-item-content">
+                <h2>Sư Tử</h2>
+                <p>Sư tử là loài dị hình giới tính; con đực lớn hơn con cái với phạm <br> vi trọng lượng điển hình từ 150 đến 200 kg đối với con đực và <br> 120 đến 182 kg (265 đến 400 lb) đối với con cái, và có lực cắn lên <br> đến 650 PSI đối với con đực trường thành, là loài lớn thứ nhì họ <br> Mèo sau hổ Đông Bắc Á.</p>
+            </div>
+        </div>
+        <div class="wildlife-item">
+            <img src="https://images.pexels.com/photos/47312/tiger-predator-animal-tooth-47312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Animal 3">
+            <div class="wildlife-item-content">
+                <h2>Hổ</h2>
+                <p>Hổ hay còn gọi là cọp hoặc hùm (và các tên gọi khác như Ông <br> ba mươi, kễnh, khái) là một loài động vật có vú thuộc họ Mèo <br> được xếp vào một trong năm loài "mèo lớn" thuộc chi Panthera. <br> Hổ là một loài thú ăn thịt, chúng dễ nhận biết nhất bởi các sọc <br> vằn dọc sẫm màu trên bộ lông màu đỏ cam với phần bụng <br> trắng.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="container">
+    <div style="position: absolute; top: 20%; left: 35%;">
+        <a href="" class="mxh"><i class="bi bi-facebook"></i></a>
+        <a href="" class="mxh"><i class="bi bi-twitter"></i></a>
+        <a href="" class="mxh"><i class="bi bi-youtube"></i></a>
+        <a href="" class="mxh"><i class="bi bi-instagram"></i></a>
+        <a href="" class="mxh"><i class="bi bi-tiktok"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

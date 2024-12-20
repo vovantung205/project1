@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>đặt vé</title>
+    <style>
+      body {
+          
+      }
+
+      header {
+        text-align: center; /* Căn giữa chữ */
+      }
+
+      main {
+        border: 1px solid #000; /* Màu và độ dày của viền */
+      }
+
+      h1 {
+          
+      }
+
+      .package {
+          
+          padding: 10px;
+          margin-bottom: 20px;
+          text-align: center; /* Căn giữa chữ */
+      }
+
+      .review {
+          
+          padding: 10px;
+          margin-bottom: 10px;
+      }
+
+      footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+      .inline-words {
+        text-decoration: underline; /* Đường gạch chân */
+      }
+      .tenve{
+        display: inline-block;
+        margin-right: 100px; /
+      }
+      .buy-now-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50; /* Màu nền của nút */
+            color: #fff; /* Màu chữ của nút */
+            border: none;
+            border-radius: 5px; /* Độ cong viền của nút */
+            cursor: pointer;
+        }
+        .container {
+    display: flex;
+    justify-content: space-between; /* Các phần tử sẽ được đặt ở hai đầu của container */
+    align-items: center; /* Các phần tử sẽ được căn giữa theo chiều dọc */
+    text-decoration: underline; /* Đường gạch chân */
+  }
+
+  .phanele {
+    padding: 10px;
+  }
+  .thong-tin-dat-ve {
+            display: none; /* Ẩn biểu mẫu ban đầu */
+        }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vé</h1>
+    </header>
+
+    <main>
+        <div style="border: 2px;height: 500px;">
+          <h2 style="text-align: center;">VÉ VÀO BAN NGÀY</h2>
+            <br>
+            <div class="tenve" style="float: left;margin-left: 200px;">
+          <h3>VÉ CÁ NHÂN</h3>
+          <p>Bao gồm các điểm tham quan sao không giới hạn.<br>
+             Tất cả du khách phải có vé theo ngày cụ thể.<br>
+             Định giá linh hoạt đang có hiệu lực.<br>
+             Của nó Mùa đông tại sở thú cho đến ngày 28 tháng 3 năm 2024.</p>
+             <div class="container">
+              <div class="phanele">Người lớn (13 tuổi trở lên)</div>
+              <div class="phanele">$28,00+</div>
+            </div>
+            <div class="container">
+              <div class="phanele">Người cao tuổi (65 trở lên)</div>
+              <div class="phanele">$26,00+</div>
+            </div>
+            <div class="container">
+              <div class="phanele">Trẻ em (3 - 12)</div>
+              <div class="phanele">$20,00+</div>
+            </div>
+            <div class="container">
+              <div class="phanele">Trẻ em (2 trở xuống)</div>
+              <div class="phanele">MIỄN PHÍ</div>
+            </div>
+            <button class="buy-now-button" onclick="hienThiForm()">Mua Ngay</button>
+        </div>
+        <div class="thong-tin-dat-ve">
+          <h3>Thông Tin Đặt Vé</h3>
+          <!-- Thêm các trường nhập thông tin cần thiết cho biểu mẫu -->
+          <label for="ho-ten">Họ và Tên:</label>
+          <input type="text" id="ho-ten" name="ho-ten" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <!-- Thêm các trường khác cần thiết -->
+
+          <!-- Nút để xác nhận đặt vé -->
+          <button onclick="xuLyDatVe()">Xác Nhận Đặt Vé</button>
+      </div>
+        <div style="float: right;margin-right: 100px;">
+          <h3>VÉ THEO ĐOÀN</h3>
+          <p>Tất cả các Thành viên trong đoàn phải đặt vé theo ngày cụ thể để tham quan.<br>
+            Số thành viên của bạn là cần thiết để đặt chỗ.</p><br>
+            <div class="container">
+              <div class="phanele">Vé 10 người</div>
+              <div class="phanele">$200,00+</div>
+            </div>
+            <div class="container">
+              <div class="phanele">Vé 20 người</div>
+              <div class="phanele">$350,00+</div>
+            </div>
+            <div class="container">
+              <div class="phanele">Vé 50 người</div>
+              <div class="phanele">$600,00+</div>
+            </div>
+            
+             <button class="buy-now-button" style="margin-right: 100px;">Mua Ngay</button>
+
+          <br>
+        </div>
+        <div class="review">
+            <!-- Đánh giá và ý kiến của người dùng -->
+        </div>
+        </div>
+        
+
+        <!-- Thêm nhiều gói dịch vụ và đánh giá khác nếu cần -->
+        
+
+    </main>
+
+    <footer>
+        &copy; 2024 Your Website Name
+    </footer>
+    <script>
+      function hienThiForm() {
+          // Hiển thị biểu mẫu khi nút "Mua Ngay" được nhấn
+          document.querySelector(".thong-tin-dat-ve").style.display = "block";
+      }
+
+      function xuLyDatVe() {
+          // Xử lý đơn đặt vé tại đây
+          alert("Đơn đặt vé đã được xử lý!");
+      }
+  </script>
+</body>
+</html>
